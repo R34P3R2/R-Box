@@ -1,6 +1,0 @@
-          [1]: Sniffing & Spoofing
-          [2]: Password Profiling
-          [3]: Wireless Hacking
-          [4]: Information Gathering
-          [5]: Phishing
-          [6]: Explotation Tools
