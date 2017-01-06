@@ -267,21 +267,22 @@ def com():
 			sqlmapin = raw_input('Have You Got Sqlmap installed? '+G+'y'+B+'/'+R+'n'+G+'? '+Y+'')
 
 			if sqlmapin == ("y"):
-				os.system("sudo ./sqlauto && python menu.py")
+				os.system("resize -s 22 65 > /dev/null")
+				os.system("sudo sh autosql && python menu.py")
 	
 
 			if sqlmapin == ("n"):
-				os.system("sudo apt-get install sqlmap && cd sqlmap && chmod 777 sqlauto && ./sqlauto && python menu.py")
+				os.system("sudo apt-get install sqlmap && cd sqlmap && chmod 777 sqlauto && sh autosql && python menu.py")
 
 
 
-     		if et == ("2"):
-     			xsstraccerin = raw_input('Have You Installed XSS TRACER BEFORE? '+G+'y/'+R+'n? ')
-     			if xsstraccerin == ("n"):
-     				os.system("git clone https://github.com/1N3/XSSTracer.git")
-     				xsstraccertarget = raw_input("Target: ")
-     				os.system("cd XSSTracer/ && python xsstracer.py %s 80"%xsstraccertarget)
-     				os.system("cd .. && python menu.py")
+     	if et == ("2"):
+     		xsstraccerin = raw_input('Have You Installed XSS TRACER BEFORE? '+G+'y/'+R+'n? ')
+     		if xsstraccerin == ("n"):
+     			os.system("git clone https://github.com/1N3/XSSTracer.git")
+     			xsstraccertarget = raw_input("Target: ")
+     			os.system("cd XSSTracer/ && python xsstracer.py %s 80"%xsstraccertarget)
+     			os.system("cd .. && python menu.py")
      		
      		if xsstraccerin == ("y"):
      			xsstraccertarget = raw_input("Target: ")
